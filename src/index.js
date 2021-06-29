@@ -10,6 +10,6 @@ ReactDOM.render(
         <Typography/>
         <App />
     </>, 
-document.getElementById('root')
+ document.getElementById('root')
 );
 
