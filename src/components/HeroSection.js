@@ -28,7 +28,7 @@ const HeroStyles = styled.div`
         .hero__name {
             font-size: 7rem;
             font-family: 'Montserrat SemiBold';
-            color: var(--gray-1);
+            color: var(--white);
         }
     }
     .hero__img {

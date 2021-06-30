@@ -27,7 +27,7 @@ const Button = ({
     outline = false,
 }) => {
     return (
-        <ButtonStyle outline={outline}>
+        <ButtonStyle className="button-wrapper" outline={outline}>
             <Link className="button" to={btnLink}>{btnText}</Link>
         </ButtonStyle>
     );
