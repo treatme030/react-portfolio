@@ -53,6 +53,7 @@ const ProjectSectionStyles = styled.div`
     }
 `;
 
+//swiper 라이브러리 사용
 const ProjectsSection = () => {
     return (
         <ProjectSectionStyles>
