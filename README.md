@@ -1,6 +1,6 @@
 ## 반응형 REACT-PORTFOLIO
 
-### * Swiper 사용하여 슬라이드 구현
+###  🍀 Swiper 사용하여 슬라이드 구현
 ```javascript 
 //npm
 npm install swiper
@@ -62,7 +62,7 @@ swiper 스타일링을 위한 css 불러오기
 import 'swiper/swiper-bundle.min.css';
 ```
 
-### * React Transition Group 
+### 🍀 React Transition Group 
 ```javascript
 // npm
 npm install react-transition-group --save
