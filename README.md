@@ -3,7 +3,7 @@
 ### * Swiper 사용하여 슬라이드 구현
 swiper 설치하기
 ```javascript 
-npm instrall swiper
+npm install swiper
 ```
 HTML 레이아웃에 추가할 Swiper, SwiperSlide 불러와서 감싸주기
 ```javascript
