@@ -57,7 +57,7 @@ const Footer = () => {
         <FooterStyles>
             <div className="container">
                 <div className="footer__col1">
-                    <h1 className="footer__col1__title">Ayan Khan</h1>
+                    <h1 className="footer__col1__title">Juhee Kim</h1>
                     <PText>
                         I always make websites that have unique
                         designs and also has a good
@@ -131,7 +131,7 @@ const Footer = () => {
             </div>
             <div className="copyright">
                 <div className="container">
-                    <PText>&#169; 2021 - Ayan Khan | Designed By web cifar</PText>
+                    <PText>&#169; 2021 - Juhee Kim | Designed By web cifar</PText>
                 </div>
             </div>
         </FooterStyles>
