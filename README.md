@@ -89,7 +89,7 @@ CSSTransition 컴포넌트 안에 상태전환에 필요한 키값을 설정(데
 ```
 CSSTransition 컴포넌트에 classNames="fade"<br/>
 transition이 enter/exit 될 때마다 클래스명이 변경됨<br/>
-```jsvascript
+```javascript
 <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
 ```
 css로 변경되는 클래스명에 적용할 코드 작성
@@ -117,7 +117,7 @@ css로 변경되는 클래스명에 적용할 코드 작성
  ```
 ### 🍭 Footer 
 col마다 안의 컨텐츠에 type이 'Link'인지에 따라 다른 링크 태그 적용
- ```jsvascript
+ ```javascript
  const Footer = () => {
     return (
         <FooterStyles>
