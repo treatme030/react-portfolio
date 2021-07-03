@@ -93,7 +93,7 @@ transition이 enter/exit 될 때마다 클래스명이 변경됨<br/>
 <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
 ```
 css로 변경되는 클래스명에 적용할 코드 작성
-```jsvascript
+```javascript
 .fade-enter {
         opacity: 0;
         transform: scale(.96);
