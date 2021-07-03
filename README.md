@@ -112,7 +112,7 @@ css로 변경되는 클래스명에 적용할 코드 작성
      opacity: 0;
      transform: scale(.96);
      transition: 250ms ease-in;  
-     transition-property: opacity, transform;                                                           
+     transition-property: opacity, transform;                                
  }
  ```
 ### 🍭 Footer 
