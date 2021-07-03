@@ -89,11 +89,11 @@ CSSTransition 컴포넌트 안에 상태전환에 필요한 키값을 설정(데
 ```
 CSSTransition 컴포넌트에 classNames="fade"<br/>
 transition이 enter/exit 될 때마다 클래스명이 변경됨<br/>
-```jsvascript
+```javascript
 <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
 ```
 css로 변경되는 클래스명에 적용할 코드 작성
-```jsvascript
+```javascript
 .fade-enter {
         opacity: 0;
         transform: scale(.96);
@@ -115,3 +115,62 @@ css로 변경되는 클래스명에 적용할 코드 작성
      transition-property: opacity, transform;                                                           
  }
  ```
+### 🍭 Footer 
+col마다 안의 컨텐츠에 type이 'Link'인지에 따라 다른 링크 태그 적용
+ ```javascript
+ const Footer = () => {
+    return (
+        <FooterStyles>
+           //<Link/> 적용
+           <FooterCol heading="Important Links"
+               links={[
+                   {
+                       title: 'Home',
+                       path: '/',
+                       type: 'Link'
+                   }
+               ]}
+               />
+ 
+          //<a></a> 적용
+          <FooterCol heading="Contact Info"
+               links = {[
+                   {
+                       title: '+880123',
+                       path: 'tel:+880123'
+                   }
+               ]}
+               />
+  </FooterStyles>
+    );
+};
+ 
+const FooterCol = ({
+    heading,
+    links = [
+        {
+            type: "Links",
+            title: "Home",
+            path: "/"
+        }
+    ]
+}) => {
+    return (
+        <ColStyles>
+            <h1 className="heading">{heading}</h1>
+            <ul>
+                {//type이 Link이면 <Link/>, 그렇지 않으면 <a></a>
+                    links.map((item, index) => (
+                    <li key={index}>
+                        {item.type === 'Link' ? (
+                        <Link to={item.path}>{item.title}</Link>
+                        ) : (
+                        <a href={item.path} target="_blank" rel="noreferrer">{item.title}</a>)}</li>)
+                    )
+                }
+            </ul>
+        </ColStyles>
+    );
+};
+ ```
+ 
