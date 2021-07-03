@@ -22,11 +22,6 @@ const FooterCol = ({
             type: "Links",
             title: "Home",
             path: "/"
-        },
-        {
-            type: "Links",
-            title: "About",
-            path: "/about"
         }
     ]
 }) => {
