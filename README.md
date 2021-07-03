@@ -115,3 +115,62 @@ css로 변경되는 클래스명에 적용할 코드 작성
      transition-property: opacity, transform;                                                           
  }
  ```
+### 🍭 Footer 
+col마다 안의 컨텐츠에 type이 'Link'인지에 따라 다른 링크 태그 적용
+ ```jsvascript
+ const Footer = () => {
+    return (
+        <FooterStyles>
+           //<Link/> 적용
+           <FooterCol heading="Important Links"
+               links={[
+                   {
+                       title: 'Home',
+                       path: '/',
+                       type: 'Link'
+                   }
+               ]}
+               />
+ 
+          //<a></a> 적용
+          <FooterCol heading="Contact Info"
+               links = {[
+                   {
+                       title: '+880123',
+                       path: 'tel:+880123'
+                   }
+               ]}
+               />
+  </FooterStyles>
+    );
+};
+ 
+const FooterCol = ({
+    heading,
+    links = [
+        {
+            type: "Links",
+            title: "Home",
+            path: "/"
+        }
+    ]
+}) => {
+    return (
+        <ColStyles>
+            <h1 className="heading">{heading}</h1>
+            <ul>
+                {//type이 Link이면 <Link/>, 그렇지 않으면 <a></a>
+                    links.map((item, index) => (
+                    <li key={index}>
+                        {item.type === 'Link' ? (
+                        <Link to={item.path}>{item.title}</Link>
+                        ) : (
+                        <a href={item.path} target="_blank" rel="noreferrer">{item.title}</a>)}</li>)
+                    )
+                }
+            </ul>
+        </ColStyles>
+    );
+};
+ ```
+ 
