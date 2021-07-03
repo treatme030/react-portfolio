@@ -174,3 +174,26 @@ const FooterCol = ({
 };
  ```
  
+### 🍭 Projects
+검색창에 입력된 값과 일치하는 데이터만 보여주기
+ ```javascript
+ const [project, setProject] = useState(projectInfo) //데이터
+ const [searchText, setSearchText] = useState('') //입력값
+
+ //입력된 값이 변경될때마다 입력된 값과 프로젝트 데이터의 이름과 일치하는 것만 보여주기
+ useEffect(() => {
+    if(searchText === '') return;
+    setProject(() =>  
+         project.filter(item => item.name.toLowerCase().match(searchText.toLowerCase())) 
+    )
+ }, [searchText])
+
+ const handleChange = (e) => {
+     e.preventDefault()
+     setSearchText(e.target.value) //입력된 값
+     if(!e.target.value.length){ //입력된 값이 없으면 모든 데이터 보여주기 --> 초기화
+         setProject(projectInfo)
+     }
+ }
+ ```
+ 
