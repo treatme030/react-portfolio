@@ -54,7 +54,7 @@ const Projects = () => {
     //입력된 값이 변경될때마다 입력된 값과 프로젝트 데이터의 이름과 일치하는 것만 보여주기
     useEffect(() => {
        if(searchText === '') return;
-       setProject(() => 
+       setProject((project) => 
             project.filter(item => item.name.toLowerCase().match(searchText.toLowerCase()))
        )
     }, [searchText])

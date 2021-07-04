@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import projectImg from '../assets/images/projectImg.png';
 
 const ProjectItemStyles = styled.div`
     .projectItem__img {
@@ -36,7 +37,11 @@ const ProjectItemStyles = styled.div`
     }
 `;
 
-const ProjectItem = ({img, title, desc}) => {
+const ProjectItem = ({
+    img = projectImg, 
+    title = 'Project Name', 
+    desc ='Lorem Ipsum is simply text of the printing'
+}) => {
     return (
         <ProjectItemStyles>
             <Link to="/projects" className="projectItem__img">
