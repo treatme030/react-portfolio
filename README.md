@@ -261,7 +261,7 @@ function App() {
 
 export default App;
 ```
-### 🌈 netify.com 에서 배포하기
+### 🌈 netlify.com 에서 배포하기
 ```javascript
 yarn build
 cd build
