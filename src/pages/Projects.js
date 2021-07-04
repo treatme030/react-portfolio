@@ -5,8 +5,6 @@ import projectInfo from '../assets/data/projects';
 import SectionTitle from '../components/SectionTitle';
 import ProjectItem from '../components/ProjectItem';
 import ContactBanner from '../components/ContactBanner';
-import Footer from '../components/Footer';
-
 
 const ProjectsStyles = styled.div`
     padding: 10rem 0 0;
@@ -98,7 +96,6 @@ const Projects = () => {
                 </div>
             </div>
             <ContactBanner/>
-            <Footer/>
         </ProjectsStyles>
     );
 };

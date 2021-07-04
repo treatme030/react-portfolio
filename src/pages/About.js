@@ -5,7 +5,6 @@ import AboutImg from '../assets/images/about-page-img.png';
 import styled from 'styled-components';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
-import Footer from '../components/Footer';
 
 const AboutPageStyles = styled.div`
     padding: 20rem 0 0;
@@ -145,7 +144,6 @@ const About = () => {
                </div>
            </div>
            <ContactBanner/>
-           <Footer/>
         </AboutPageStyles>
     );
 };

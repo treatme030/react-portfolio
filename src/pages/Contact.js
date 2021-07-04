@@ -1,10 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+import ContactSection from '../components/ContactSection';
+import Map from '../components/Map';
+
+const ContactStyles = styled.div`
+`;
 
 const Contact = () => {
     return (
-        <div>
-            <h1>This is Contact Page</h1>
-        </div>
+        <ContactStyles>
+            <ContactSection/>
+            <Map/>
+        </ContactStyles>
     );
 };
 
