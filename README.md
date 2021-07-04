@@ -15,7 +15,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
  <Swiper>
      {
         projects.map((project, idx) => {
-            if(idx >= 5) return;
             return (
                 <SwiperSlide key={project.id}>
                     <ProjectItem
