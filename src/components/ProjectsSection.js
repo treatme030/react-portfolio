@@ -79,15 +79,15 @@ const ProjectsSection = () => {
                             }
                         }}
                     >
-                        {projects.map((project, idx) => {
-                            if(idx >= 5) return;
+                        {projects.map((project, index) => {
+                            if (index >= 5) return;
                             return (
                                 <SwiperSlide key={project.id}>
-                                    <ProjectItem
-                                        title={project.name}
-                                        img={project.img}
-                                        desc={project.desc}
-                                    />
+                                <ProjectItem
+                                    title={project.name}
+                                    img={project.img}
+                                    desc={project.desc}
+                                />
                                 </SwiperSlide>
                             );
                         })}
