@@ -6,12 +6,15 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-
+import ScrollToTop from './components/ScrollToTop';
+import SmoothScrollbar from './components/SmoothScrollbar';
 
 function App() {
   return (
       <Router>
         <NavMenu/>
+        {/* <ScrollToTop/> */}
+        <SmoothScrollbar>
         <Switch>
           <Route exact path="/">
             <Home/>
@@ -27,6 +30,7 @@ function App() {
           </Route>
         </Switch>
         <Footer/>
+        </SmoothScrollbar>
       </Router>
   );
 }
