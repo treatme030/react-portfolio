@@ -197,3 +197,79 @@ const FooterCol = ({
  }
  ```
  
+ ### 🍭 SmoothScrollBar
+ ```javascript
+ yarn add react-is smooth-scrollbar smooth-scrollbar-react
+ ```
+ 부드러운 스크롤과 새 페이지가 로드될때마다 해당 페이지의 상단이 보이게 하기
+ ```javascript
+import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+import ScrollBar from 'react-smooth-scrollbar';
+
+const SmoothScrollbar = ({children}) => {
+    const ref = useRef(null) //특정 DOM 선택시 사용
+    const{ pathname } = useLocation() //페이지 전환시 사용
+
+    //새 페이지가 로드될때마다 해당 페이지 상단이 보이게 하기
+    useEffect(() => {
+        const { scrollbar } = ref.current
+        scrollbar.setPosition(0, 0)
+    },[pathname])
+
+    return (
+        <div>
+            {/* damping 값이 낮을수록 스크롤이 부드러워짐 */}
+            <ScrollBar ref={ref} damping=".09"> 
+            {/* ScrollBar로 감싸진 모든 컴포넌트에 적용 */}
+                {children} 
+            </ScrollBar>
+        </div>
+    );
+};
+
+export default SmoothScrollbar;
+```
+App.js에 스크롤이 적용될 컴포넌트 감싸주기
+```javascript
+import SmoothScrollbar from './components/SmoothScrollbar';
+
+function App() {
+  return (
+      <Router>
+        <NavMenu/>
+        <SmoothScrollbar>
+        <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route path="/about">
+            <About/>
+          </Route>
+          <Route path="/projects">
+            <Projects/>
+          </Route>
+          <Route path="/contact">
+            <Contact/>
+          </Route>
+        </Switch>
+        <Footer/>
+        </SmoothScrollbar>
+      </Router>
+  );
+}
+
+export default App;
+```
+### 🌈 netify.com 에서 배포하기
+```javascript
+yarn build
+cd build
+npm install netlify-cli -g
+cd ..
+netlify deploy
+```
+
+
+ 
+
