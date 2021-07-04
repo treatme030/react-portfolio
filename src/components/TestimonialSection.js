@@ -117,7 +117,7 @@ const TestimonialSection = () => {
                     <div className="next" 
                     onClick={handleNext} 
                     role="button" 
-                    tabIndex={0}>
+                    tabIndex={1}>
                         <MdArrowForward/>
                     </div>
                 </div>

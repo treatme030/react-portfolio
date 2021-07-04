@@ -96,15 +96,15 @@ const Footer = () => {
                     <FooterCol heading="Contact Info"
                     links = {[
                         {
-                            title: '+880123',
-                            path: 'tel:+880123'
+                            title: '+820123',
+                            path: 'tel:+820123'
                         },
                         {
-                            title: 'webcifar@gmail.com',
-                            path: 'mailto:webcifar@gmail.com'
+                            title: 'treatme8192@gmail.com',
+                            path: 'mailto:treatme8192@gmail.com'
                         },
                         {
-                            title: 'GEC Circle, chittagong',
+                            title: 'Seoul, South of Korea',
                             path: 'http://google.com/maps'
                         }
                     ]}

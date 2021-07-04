@@ -1,7 +1,7 @@
 import React from 'react';
 import PText from '../components/PText';
 import Button from '../components/Button';
-import AboutImg from '../assets/images/about-page-img.png';
+import AboutImg from '../assets/images/about-page-img2.jpg';
 import styled from 'styled-components';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
@@ -104,15 +104,7 @@ const About = () => {
                        <h1 className="about__info__heading">EDUCATION</h1>
                        <AboutInfoItem
                        title="School"
-                       items={['Nasirbad Govt. High Schllo', 'Chittagong']}
-                       />
-                       <AboutInfoItem
-                       title="College"
-                       items={['BAF shaheen college Chittagong']}
-                       />
-                       <AboutInfoItem
-                       title="Varsity"
-                       items={['University of Chittagong']}
+                       items={['High School']}
                        />
                    </div>
                    <div className="about__info__item">

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImg from '../assets/images/hero.png';
+import HeroImg from '../assets/images/hero2.jpg';
 import Button from './Button';
 import PText from './PText';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
@@ -32,15 +32,27 @@ const HeroStyles = styled.div`
         }
     }
     .hero__img {
+        position: relative;
         max-width: 900px;
         width: 100%;
         height: 600px;
         margin: 0 auto;
         border: 2px solid var(--gray-1);
+        z-index: -1;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--black);
+            opacity: .5;
+        }
     }
     .hero__info {
             margin-top: -18rem;
-    }
+            }
     .hero__social,
     .hero__scrollDown {
         display: flex;
@@ -161,7 +173,7 @@ const HeroSection = () => {
                             developer for 1 years. I love to design and
                             make new web experiences for the people.
                         </PText>
-                        <Button btnLink="/projects" btnText="see my works"/>
+                        <Button btnLink="/projects" btnText="see my works" outline/>
                     </div>
                     <div className="hero__social">
                         <div className="hero__social__indicator">
