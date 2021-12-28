@@ -1,4 +1,4 @@
-## 반응형 REACT-PORTFOLIO👩🏻 (https://juhee-react-portfolio.netlify.app/)
+## 👩🏻 반응형 [REACT-PORTFOLIO](https://juhee-react-portfolio.netlify.app/)
 
 ###  🍀 Swiper 사용하여 슬라이드 구현
 ```javascript 
