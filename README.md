@@ -2,6 +2,8 @@
 
 ## 👩🏻 반응형 [REACT-PORTFOLIO](https://juhee-react-portfolio.netlify.app/)
 
+![pport](https://user-images.githubusercontent.com/74355328/147540060-97a2d0b3-40e2-42d9-a60d-618a9be35c81.gif)
+
 ###  🍀 Swiper 사용하여 슬라이드 구현
 ```javascript 
 //npm
