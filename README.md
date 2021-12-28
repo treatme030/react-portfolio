@@ -1,4 +1,4 @@
-## 반응형 REACT-PORTFOLIO👩🏻
+## 👩🏻 반응형 [REACT-PORTFOLIO](https://juhee-react-portfolio.netlify.app/)
 
 ###  🍀 Swiper 사용하여 슬라이드 구현
 ```javascript 
@@ -15,7 +15,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
  <Swiper>
      {
         projects.map((project, idx) => {
-            if(idx >= 5) return;
             return (
                 <SwiperSlide key={project.id}>
                     <ProjectItem
@@ -270,6 +269,7 @@ cd ..
 netlify deploy
 ```
 
+*참고: https://www.youtube.com/watch?v=esC2k9z7w2U&list=PLRv_Gd5w9e7mO-lGxKkNSWiAlsiZHnQYY&index=1
 
  
 
