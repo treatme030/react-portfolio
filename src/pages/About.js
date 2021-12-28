@@ -1,6 +1,5 @@
 import React from 'react';
 import PText from '../components/PText';
-import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img2.jpg';
 import styled from 'styled-components';
 import AboutInfoItem from '../components/AboutInfoItem';
@@ -75,67 +74,61 @@ const AboutPageStyles = styled.div`
 const About = () => {
     return (
         <AboutPageStyles>
-           <div className="container">
-               <div className="top-section">
-                   <div className="left">
-                       <p className="about__subheading">Hi, I am <span>Juhee Kim</span></p>
-                       <h2 className="about__heading">A freelance Web developer</h2>
-                       <div className="about__info">
-                            <PText>
-                                I started coding for one years.
-                                I love it and now I have the opportunity to design 
-                                along with the coding. I find it really interesting 
-                                and I enjoyed the process a lot.
-                                <br/><br/>
-                                My vision is to make the world a better lpace.
-                                Now almost everything is becoming better than ever.
-                                It is time for us to create more good stuff 
-                                that helps the world to become a better place.
-                            </PText>
-                       </div>
-                       <Button btnText="Download CV" btnLink="#"/>
-                   </div>
-                   <div className="right">
-                       <img src={AboutImg} alt="Ayan Khan img"/>
-                   </div>
-               </div>
-               <div className="about__info__items">
-                   <div className="about__info__item">
+            <div className="container">
+                <div className="top-section">
+                    <div className="left">
+                        <p className="about__subheading">안녕하세요! <span>김주희</span> 입니다.</p>
+                        <h2 className="about__heading">A Frontend Web developer</h2>
+                        <div className="about__info">
+                                <PText>
+                                    - HTML의 시맨틱 마크업과 CSS의 적절한 속성을 사용하여 스토리를 읽을 수 있는 레이아웃을 구현하고자 노력합니다.
+                                    <br/><br/>
+                                    - 컴포넌트의 합리적인 분리와 효율적인 재사용으로 클린코드를 작성하려고 노력합니다.
+                                    <br/><br/>
+                                    - 퍼블리싱과 백엔드 작업에 대한 지식과 이해가 가능하여 관련 분야와 원활한 커뮤니케이션에 유리합니다.
+                                    <br/><br/>
+                                    - 경험이 없는 부분에 대해서는 적극적으로 공부하고, 탐색하며, 적극적으로 적용해보려고 합니다.
+                                </PText>
+                        </div>
+                    </div>
+                    <div className="right">
+                        <img src={AboutImg} alt="Ayan Khan img"/>
+                    </div>
+                </div>
+                <div className="about__info__items">
+                    <div className="about__info__item">
                        <h1 className="about__info__heading">EDUCATION</h1>
                        <AboutInfoItem
-                       title="School"
-                       items={['High School']}
-                       />
-                   </div>
-                   <div className="about__info__item">
-                       <h1 className="about__info__heading">My Skills</h1>
-                       <AboutInfoItem
-                       title="FrontEnd"
-                       items={['HTML', 'CSS', 'JavaScript', 'REACT']}
+                       title="코드스테이츠(부트캠프) 2021년 5월~12월"
+                       items={['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'express', 'Mysql']}
                        />
                        <AboutInfoItem
-                       title="BackEnd"
-                       items={['Node', 'Express', 'PHP']}
+                       title="이젠아카데미(국비학원) 2021년 4월~6월"
+                       items={['React', 'Redux 기초']}
                        />
                        <AboutInfoItem
-                       title="Design"
-                       items={['Photoshop', 'After Effects', 'Figma']}
+                       title="봄아카데미(국비학원) 2021년 1월~4월"
+                       items={['HTML', 'CSS', 'JavaScript 기초']}
                        />
-                   </div>
-                   <div className="about__info__item">
-                       <h1 className="about__info__heading">Experiences</h1>
-                       <AboutInfoItem
-                       title="2020 - 2021"
-                       items={['vom academy']}
-                       />
-                       <AboutInfoItem
-                       title="2021 -"
-                       items={['codestates']}
-                       />
-                   </div>
-               </div>
-           </div>
-           <ContactBanner/>
+                    </div>
+                    <div className="about__info__item">
+                        <h1 className="about__info__heading">My Skills</h1>
+                        <AboutInfoItem
+                        title="FrontEnd"
+                        items={['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Redux-toolkit', 'styled-components']}
+                        />
+                        <AboutInfoItem
+                        title="BackEnd"
+                        items={['express', 'Mysql', 'Koa']}
+                        />
+                        <AboutInfoItem
+                        title="Design"
+                        items={['Photoshop', 'Figma']}
+                        />
+                    </div>
+                </div>
+            </div>
+            <ContactBanner/>
         </AboutPageStyles>
     );
 };

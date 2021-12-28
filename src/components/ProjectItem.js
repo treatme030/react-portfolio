@@ -13,6 +13,7 @@ const ProjectItemStyles = styled.div`
         border: 3px solid var(--gray-2);
         img {
             height: 100%;
+            object-fit: fill;
         }
     }
     .projectItem__info {
@@ -40,7 +41,8 @@ const ProjectItemStyles = styled.div`
 const ProjectItem = ({
     img = projectImg, 
     title = 'Project Name', 
-    desc ='Lorem Ipsum is simply text of the printing'
+    desc = 'Lorem Ipsum is simply text of the printing',
+    href = '#'
 }) => {
     return (
         <ProjectItemStyles>
@@ -48,10 +50,10 @@ const ProjectItem = ({
                 <img src={img} alt="project img"/>
             </Link>
             <div className="projectItem__info">
-                <Link to="#">
+                <a href={href} title="GitHub에서 확인하려면 click!" target="_blank" rel="noopener noreferrer">
                     <h3 className="projectItem__title">{title}</h3>
-                </Link>
-                <p className="projectItem__desc">{desc}</p>
+                    <p className="projectItem__desc">{desc}</p>
+                </a>
             </div>
         </ProjectItemStyles>
     );

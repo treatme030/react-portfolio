@@ -77,10 +77,10 @@ const AboutSection = () => {
                 <div className="aboutSection__left">
                     <SectionTitle subheading="Let me introduce myself" heading="About me"/>
                     <PText>
-                        I wanna be a website designer and
-                        developer. I create professional websites.
-                        I love art and always try to show unique 
-                        views to the audience through my design.
+                        기존의 틀에 갇히지 않고,
+                        더 효율적인 방법이 있는지 지속적으로 탐색하며,
+                        새로운 것은 열정적으로 받아들이는,
+                        항상 학습하는 개발자
                     </PText>
                     <div className="aboutSection__buttons">
                         <Button btnLink="/projects" btnText="Works"/>
@@ -88,7 +88,7 @@ const AboutSection = () => {
                     </div>
                 </div>
                 <div className="aboutSection__right">
-                    <img src={AboutImg} alt=""/>
+                    <img src={AboutImg} alt="웹개발 학습하는 이미지"/>
                 </div>
             </div>
         </AboutSectionStyle>

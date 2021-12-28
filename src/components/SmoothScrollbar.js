@@ -15,7 +15,7 @@ const SmoothScrollbar = ({children}) => {
     return (
         <div>
             {/* damping 값이 낮을수록 스크롤이 부드러워짐 */}
-            <ScrollBar ref={ref} damping=".09"> 
+            <ScrollBar ref={ref} damping='0.09'> 
             {/* ScrollBar로 감싸진 모든 컴포넌트에 적용 */}
                 {children} 
             </ScrollBar>

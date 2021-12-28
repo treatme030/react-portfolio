@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import MapImg from '../assets/images/map-seoul.png';
+import MapImg from '../assets/images/mymap.png';
 
 const MapStyles = styled.div`
     position: relative;
@@ -59,16 +59,14 @@ const Map = () => {
             <div className="container">
                 <div className="map__card">
                     <h3 className="map__card__heading">Here is me</h3>
-                    <PText>Seoul, South of Korea</PText>
+                    <PText>경기도 시흥시 미산로144번길</PText>
                     <a 
-                        href="https://www.google.co.kr/maps/place/
-                        %EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C/@37.5512399,126.9748423,14.75z
-                        /data=!4m5!3m4!1s0x357ca2012d5c39cf:0x7e11eca1405bf29b!8m2!3d37.566535!4d126.9779692?hl=ko" 
+                        href="http://kko.to/HkPCfWh40" 
                         target="_blank"
                         rel="noreferrer"
                         className="map__card__link"
                     >
-                        Open in Goole Map
+                        Open in Kakao Map
                     </a>
                 </div>
             </div>

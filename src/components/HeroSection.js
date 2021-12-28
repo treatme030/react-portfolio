@@ -1,7 +1,6 @@
 import React from 'react';
-import HeroImg from '../assets/images/hero2.jpg';
+import HeroImg from '../assets/images/hero4.jpg';
 import Button from './Button';
-import PText from './PText';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDown from '../assets/images/scroll-down-arrow.svg';
 import styled from 'styled-components';
@@ -168,11 +167,6 @@ const HeroSection = () => {
                         <img src={HeroImg} alt=""/>
                     </div>
                     <div className="hero__info">
-                        <PText>
-                            I am studying web designer and 
-                            developer for 1 years. I love to design and
-                            make new web experiences for the people.
-                        </PText>
                         <Button btnLink="/projects" btnText="see my works" outline/>
                     </div>
                     <div className="hero__social">

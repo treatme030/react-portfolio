@@ -56,9 +56,9 @@ const ContactSection = () => {
                 <SectionTitle heading="contact" subheading="get in touch"/>
                 <div className="contactSection__wrapper">
                     <div className="left">
-                        <ContactInfoItem icon={<MdLocalPhone/>} text="+8203242"/>
+                        <ContactInfoItem icon={<MdLocalPhone/>} text="010-4515-9867"/>
                         <ContactInfoItem icon={<MdEmail/>} text="treatme8192@gmail.com"/>
-                        <ContactInfoItem text="Seoul, South of Korea"/>
+                        <ContactInfoItem text="경기도 시흥시 미산로144번길"/>
                     </div>
                     <div className="right">
                         <ContactForm />
